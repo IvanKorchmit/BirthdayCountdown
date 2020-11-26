@@ -1,0 +1,57 @@
+:root {
+    --dark-background: #0C0D19;
+    --dark: #26294C;
+    --default-font: #FF4041;
+    --alt-background: #5F314E;
+}
+
+* { 
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--dark-background);
+}
+.container {
+    background-color: var(--dark);
+    background-repeat: repeat-y;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: var(--default-font);
+    font-size: 2rem;
+}
+.btn { 
+    display: block;
+    color: var(--default-font);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    text-decoration: none;
+    border: 2px solid var(--dark-background);
+    background-color: var(--dark);
+}
+.wishes {
+    background:var(--alt-background);
+    color: var(--dark-background);
+}
+
+img {
+    float:right;
+    width: 200px;
+}
+
+.link {
+    text-decoration: none;
+    color:var(--dark-background);
+}
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+@media (max-width: 550px) {
+    .container {
+        width: 100%;
+    }
+}
